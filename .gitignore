@@ -1,0 +1,96 @@
+# -----------------------------------
+# Argona Project .gitignore
+# Rust + TypeScript + Docs + Examples
+# -----------------------------------
+
+# === Rust (compiler, runtime, aon) ===
+target/
+Cargo.lock
+*.rs.bk
+
+# Build artifacts
+*.rlib
+*.rmeta
+*.dll
+*.so
+*.dylib
+*.exe
+*.pdb
+
+# Rust tooling
+/.cargo/
+/.vscode/
+/.idea/
+/rustfmt.toml
+/.clippy.toml
+
+# === TypeScript / Node (CLI, docs site) ===
+node_modules/
+dist/
+build/
+coverage/
+.npm/
+*.log
+*.tsbuildinfo
+
+# TypeScript output
+*.js
+*.d.ts
+*.map
+
+# === Docs & Generated Assets ===
+docs/.vitepress/dist/
+docs/.docusaurus/
+docs/.next/
+docs/build/
+docs/public/
+docs/.cache/
+site/
+*.html
+*.pdf
+
+# === IDEs and Editors ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# === System / OS ===
+ehthumbs.db
+Desktop.ini
+Icon?
+._*
+
+# === Examples / Experiments ===
+examples/*.out
+examples/*.log
+examples/*.tmp
+
+# === Argona Specific ===
+# Compiled WASM bundles or artifacts
+*.wasm
+*.wat
+*.wasi
+
+# Run artifacts, logs, and traces
+*.trace.json
+*.trace.log
+*.run.json
+*.replay.json
+
+# Cached model prompts or evals
+cache/
+evals/
+benchmarks/
+
+# === Misc ===
+.env
+.env.local
+.env.*
+*.lock
+*.bak
+*.old
